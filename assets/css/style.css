@@ -108,7 +108,10 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:non
 .brand{position:relative;min-height:min(100svh,900px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:clamp(24px,4vw,72px);padding:120px max(var(--gutter),calc((100% - 1240px)/2));color:var(--fg);overflow:hidden}
 .cover{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
 .cover.is-done{display:none}
-.brand__text{display:grid;gap:1.1rem;max-width:44rem}
+.brand__text{display:grid;gap:1.1rem;max-width:44rem;position:relative;z-index:1}
+/* a soft scrim of the chapter's own colour keeps the copy legible over its texture */
+.brand::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,color-mix(in srgb,var(--field) 78%,transparent) 0%,color-mix(in srgb,var(--field) 45%,transparent) 38%,color-mix(in srgb,var(--field) 0%,transparent) 62%)}
+.brand__fig{position:relative;z-index:1}
 .brand__tag{margin:0;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.3rem,2.4vw,2.2rem)}
 .brand__p{margin:0;font-size:clamp(1rem,1.25vw,1.2rem);max-width:52ch}
 .chips{list-style:none;margin:.4rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
@@ -191,6 +194,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:non
 
 /* ---------- responsive ---------- */
 @media (max-width:1000px){
+.brand::before{background:linear-gradient(180deg,color-mix(in srgb,var(--field) 0%,transparent) 30%,color-mix(in srgb,var(--field) 70%,transparent) 52%,color-mix(in srgb,var(--field) 92%,transparent) 100%)}
   .brand{grid-template-columns:1fr;padding:100px var(--gutter) 60px}
   .brand__fig{width:min(420px,80%);order:-1}
   .moments{grid-template-columns:repeat(3,minmax(0,1fr))}

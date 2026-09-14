@@ -10,7 +10,7 @@
 <link rel="preload" as="image" href="assets/img/wipe-sprite.png">
 <link rel="preload" as="image" href="assets/packs-real/cut/fingers-fresh-mint-front.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/style.css?v=17">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -23,7 +23,7 @@
 <!-- The wipe stage: coloured layers the finger wipe erases. Sits over the hero; gone when the visitor has wiped it clean. -->
 <div class="stage" id="stage" aria-hidden="true">
   <canvas class="layer" id="layer" style="background:#1f49b5"
-    data-products='[{"color":"#1f49b5","ink":"#ffffff","word":"Fingers Fresh","pack":"assets/packs-real/cut/fingers-fresh-mint-front.png","bg":"assets/img/arrive-ff.jpg"},{"color":"#e3262b","ink":"#ffffff","word":"Clean&Go","pack":"assets/packs-real/cut/clean-go-angle.png","bg":"assets/img/arrive-cg.jpg"},{"color":"#0f2f7a","ink":"#ffffff","word":"FreshMate","pack":"assets/packs-real/cut/freshmate-angle.png","bg":"assets/img/arrive-fm.jpg"},{"color":"#c8f542","ink":"#111111","word":"Finger Fresh","pack":"assets/packs-real/cut/finger-fresh-angle.png","bg":"assets/img/arrive-fi.jpg"}]'></canvas>
+    data-products='[{"color":"#33a878","ink":"#ffffff","word":"Fingers Fresh","pack":"assets/packs-real/cut/fingers-fresh-mint-front.png","bg":"assets/img/arrive-ff.jpg"},{"color":"#e3262b","ink":"#ffffff","word":"Clean&Go","pack":"assets/packs-real/cut/clean-go-angle.png","bg":"assets/img/arrive-cg.jpg"},{"color":"#1846c9","ink":"#ffffff","word":"FreshMate","pack":"assets/packs-real/cut/freshmate-angle.png","bg":"assets/img/arrive-fm.jpg"},{"color":"#c8f542","ink":"#111111","word":"Finger Fresh","pack":"assets/packs-real/cut/finger-fresh-angle.png","bg":"assets/img/arrive-fi.jpg"}]'></canvas>
   <div class="wipe" id="wipe"></div>
   <div class="stage__ui">
     <p class="stage__hint" id="hint">Wipe to enter</p>
@@ -89,7 +89,7 @@
 
 <section class="brands" id="marki" aria-label="Four brands">
 
-  <article class="brand brand--ff" data-stain="coffee" id="marka-fresh-fingers" data-bg="#1f49b5" data-ink="#ffffff" data-prev="#ffffff">
+  <article class="brand brand--ff" data-stain="coffee" id="marka-fresh-fingers" data-bg="#33a878" data-tex="assets/img/chapter-ff.jpg" data-ink="#ffffff" data-prev="#ffffff">
     <canvas class="cover" aria-hidden="true"></canvas>
     <div class="brand__text">
       <h2 class="brand__name">Fingers Fresh</h2>
@@ -104,7 +104,7 @@
     </figure>
   </article>
 
-  <article class="brand brand--cg" data-stain="wine" id="marka-clean-go" data-bg="#e3262b" data-ink="#ffffff" data-prev="#1f49b5">
+  <article class="brand brand--cg" data-stain="wine" id="marka-clean-go" data-bg="#e3262b" data-tex="assets/img/chapter-cg.jpg" data-ink="#ffffff" data-prev="#33a878">
     <canvas class="cover" aria-hidden="true"></canvas>
     <div class="brand__text">
       <h2 class="brand__name">Clean&amp;Go</h2>
@@ -119,7 +119,7 @@
     </figure>
   </article>
 
-  <article class="brand brand--fm" data-stain="tea" id="marka-freshmate" data-bg="#0f2f7a" data-ink="#ffffff" data-prev="#e3262b">
+  <article class="brand brand--fm" data-stain="tea" id="marka-freshmate" data-bg="#1846c9" data-tex="assets/img/chapter-fm.jpg" data-ink="#ffffff" data-prev="#e3262b">
     <canvas class="cover" aria-hidden="true"></canvas>
     <div class="brand__text">
       <h2 class="brand__name">FreshMate</h2>
@@ -134,7 +134,7 @@
     </figure>
   </article>
 
-  <article class="brand brand--fi" data-stain="choc" id="marka-finger-fresh" data-bg="#c8f542" data-ink="#111111" data-prev="#0f2f7a">
+  <article class="brand brand--fi" data-stain="choc" id="marka-finger-fresh" data-bg="#c8f542" data-tex="assets/img/chapter-fi.jpg" data-ink="#111111" data-prev="#1846c9">
     <canvas class="cover" aria-hidden="true"></canvas>
     <div class="brand__text">
       <h2 class="brand__name">Finger Fresh</h2>
@@ -276,6 +276,6 @@
 <script src="assets/js/gsap.min.js?v=313" defer></script>
 <script src="assets/js/ScrollTrigger.min.js?v=313" defer></script>
 <script src="assets/js/SplitText.min.js?v=313" defer></script>
-<script src="assets/js/site.js?v=31" defer></script>
+<script src="assets/js/site.js?v=33" defer></script>
 </body>
 </html>

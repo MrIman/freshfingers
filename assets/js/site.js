@@ -212,8 +212,10 @@
   /* ---------- 2. chapters: each brand is wiped in over the previous colour ---------- */
   $$('.brand').forEach(b => {
     const cv = $('.cover', b);
-    if (!motion) { cv.remove(); b.style.background = b.dataset.bg; b.style.color = b.dataset.ink; return; }
-    b.style.background = b.dataset.bg; b.style.color = b.dataset.ink;
+    // the chapter wears the same brand texture as its hero panel, over the flat colour as a fallback
+    const field = b.dataset.tex ? `${b.dataset.bg} url(${b.dataset.tex}) center / cover no-repeat` : b.dataset.bg;
+    b.style.background = field; b.style.color = b.dataset.ink; b.style.setProperty('--field', b.dataset.bg);
+    if (!motion) { cv.remove(); return; }
     let painted = false, done = false;
     const paint = () => { if (done) return; paintStains(cv); painted = true; };
     paint(); addEventListener('resize', () => { if (!done) paint(); });
