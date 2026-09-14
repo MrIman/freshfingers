@@ -1,0 +1,6 @@
+{
+  "prompt": "gpt-image-2 text2image 16:9: Marvis-idiom colour-drenched royal blue block, white caps headline, one large Fresh Fingers box, claims icons, marquee strip, ornament button. Reference only (code-led round); not an approved comp.",
+  "model": "gpt-image-2",
+  "approved": false,
+  "role": "critique reference, code-led build"
+}

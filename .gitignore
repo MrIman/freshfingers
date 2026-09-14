@@ -1,0 +1,13 @@
+.DS_Store
+.impeccable/build/*.png
+.impeccable/build/*-tall.png
+.impeccable/build/dbg-*
+.impeccable/build/crops/
+.impeccable/build/strip*.png
+.impeccable/config.local.json
+.vercel
+
+# local-only: source video and unrelated film project
+*.mov
+.nosenic-film/
+zeby.jpeg

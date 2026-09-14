@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T23:30:00+02:00",
+  "title": "Design System: Fresh Fingers",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "primary", "displayName": "Paper", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(100% 0 0)"] },
+      "ink": { "role": "primary", "displayName": "Ink", "canonical": "#111111", "tonalRamp": ["oklch(17% 0 0)", "oklch(28% 0 0)", "oklch(39% 0 0)", "oklch(50% 0 0)", "oklch(61% 0 0)", "oklch(72% 0 0)", "oklch(84% 0 0)", "oklch(95% 0 0)"] },
+      "grey": { "role": "neutral", "displayName": "Grey", "canonical": "#6b6b6b", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(52% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"] },
+      "grey-on-ink": { "role": "neutral", "displayName": "Grey on Ink", "canonical": "#9a9a9a", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(67% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"] },
+      "fresh-fingers-blue": { "role": "secondary", "displayName": "Fresh Fingers Blue", "canonical": "#1f49b5", "tonalRamp": ["oklch(15% 0.06 265)", "oklch(25% 0.10 265)", "oklch(35% 0.15 265)", "oklch(43% 0.17 265)", "oklch(55% 0.17 265)", "oklch(68% 0.13 265)", "oklch(82% 0.08 265)", "oklch(95% 0.02 265)"] },
+      "clean-go-red": { "role": "secondary", "displayName": "Clean&Go Red", "canonical": "#e3262b", "tonalRamp": ["oklch(15% 0.06 27)", "oklch(27% 0.11 27)", "oklch(39% 0.16 27)", "oklch(50% 0.20 27)", "oklch(58% 0.22 27)", "oklch(72% 0.16 27)", "oklch(85% 0.08 27)", "oklch(95% 0.02 27)"] },
+      "freshmate-navy": { "role": "secondary", "displayName": "FreshMate Navy", "canonical": "#0f2f7a", "tonalRamp": ["oklch(15% 0.06 265)", "oklch(24% 0.10 265)", "oklch(33% 0.14 265)", "oklch(45% 0.15 265)", "oklch(57% 0.14 265)", "oklch(70% 0.11 265)", "oklch(83% 0.06 265)", "oklch(95% 0.02 265)"] },
+      "finger-fresh-lime": { "role": "secondary", "displayName": "Finger Fresh Lime", "canonical": "#c8f542", "tonalRamp": ["oklch(15% 0.04 120)", "oklch(28% 0.08 120)", "oklch(41% 0.12 120)", "oklch(54% 0.15 120)", "oklch(67% 0.18 120)", "oklch(80% 0.20 120)", "oklch(92% 0.21 120)", "oklch(97% 0.08 120)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The hero claim only; uppercase, opsz 96, one Newsreader italic word. The arrival canvas draws the four brand names in the same face." },
+      "display-brand": { "displayName": "Display Brand", "purpose": "Chapter heading: the brand name in Bricolage 800 uppercase, with the Newsreader tagline beneath; no logotype marks." },
+      "display-menu": { "displayName": "Display Menu", "purpose": "Full-screen menu items, uppercase, left-aligned." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings in sentence case with one italic accent word; large and medium variants for product/contact and partner cards." },
+      "brandmark": { "displayName": "Brandmark", "purpose": "The Fresh Fingers wordmark beside the cameo in the top bar, sentence case; 1.6rem in the footer." },
+      "accent-italic": { "displayName": "Accent Italic", "purpose": "The single em inside a heading; 1.02em inside Display, 1.06em inside Headline." },
+      "title": { "displayName": "Title", "purpose": "Chapter taglines, hero caption, closing statement line, footer tagline." },
+      "body": { "displayName": "Body", "purpose": "All running copy; 16px under 640px." },
+      "body-lead": { "displayName": "Body Lead", "purpose": "Statement paragraph at 58ch." },
+      "label": { "displayName": "Label", "purpose": "The one label token: pack names, chips, captions, spec terms, form labels, footer heads, hexagon label, stage hint and skip. Grey on paper captions, Grey on Ink in the footer." },
+      "label-button": { "displayName": "Button Label", "purpose": "Pill buttons; 0.92rem in the hero variant. CSS declares 600, ships as Figtree 700." },
+      "label-marquee": { "displayName": "Marquee Label", "purpose": "Both ink marquees. CSS declares 600, ships as Figtree 700." }
+    },
+    "shadows": [
+      { "name": "shelf-pack", "value": "drop-shadow(0 26px 30px rgba(0,0,0,.2))", "purpose": "The four packs on the hero shelf." },
+      { "name": "product-pack", "value": "drop-shadow(0 24px 34px rgba(0,0,0,.18))", "purpose": "The open pack inside the product card." },
+      { "name": "chapter-main-pack", "value": "drop-shadow(0 34px 44px rgba(0,0,0,.28))", "purpose": "The large pack on a drenched chapter field." },
+      { "name": "chapter-second-pack", "value": "drop-shadow(0 20px 30px rgba(0,0,0,.25))", "purpose": "The smaller rotated pack behind the main one." },
+      { "name": "wipe-sprite", "value": "drop-shadow(0 18px 26px rgba(0,0,0,.28))", "purpose": "The mascot's finger-and-wipe cursor over the arrival layer." },
+      { "name": "canvas-pack", "value": "shadowBlur 34, shadowOffsetY 20, rgba(0,0,0,.35)", "purpose": "Each pack drawn on the arrival canvas. No contact ellipses anywhere." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "The only CSS easing: button, pack, hexagon and body colour transitions." },
+      { "name": "body-morph", "value": "background-color .9s, color .9s", "purpose": "Body --bg/--fg follow the chapter under the 55% line of the viewport." },
+      { "name": "button-state", "value": "background .25s, color .25s, transform .4s, arrow .3s", "purpose": "Pill hover inversion and lift." },
+      { "name": "arrival-wipe", "value": "destination-out brush, radius max(120px, 21% of shorter side), coverage sampled every 220ms, ends under 10%", "purpose": "Hand wipe of the four-panel arrival layer with the finger-and-wipe sprite as cursor." },
+      { "name": "chapter-cover-wipe", "value": "1.4s power1.inOut along a four-row S-path, brush max(110px, 20% of shorter side)", "purpose": "Chapter wiped in over the previous colour at top 70%." },
+      { "name": "menu-clip", "value": "clip-path circle at calc(100% - 64px) 64px, .8s open / .6s close, expo.inOut", "purpose": "Full-screen menu from the hexagon." },
+      { "name": "pack-breathe", "value": "y -8px, rotation 1.5deg, 2.6s+ yoyo sine.inOut", "purpose": "Shelf packs at rest." },
+      { "name": "statement-rise", "value": "autoAlpha 0 to 1, y 24px, 1s expo.out, stagger .1, once at top 80%", "purpose": "The single fade beat on the page." },
+      { "name": "marquee", "value": "22s linear infinite", "purpose": "Marquee track; removed under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "collapse", "value": "1000px" },
+      { "name": "mobile", "value": "640px" },
+      { "name": "stage-grid", "value": "700px (canvas width; 2x2 panels below)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Pill Button (hero)",
+      "kind": "button",
+      "refersTo": "button-pill-large",
+      "description": "Primary CTA: hairline pill in currentColor with the single stroked arrow; hover inverts to fg on bg and lifts.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><span>Poznaj marki</span><svg class=\"ds-btn__arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 12h17M13 5l7 7-7 7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;gap:.6em;padding:1.05em 1.7em;border:1.5px solid currentColor;border-radius:999px;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-weight:700;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;color:var(--fg,#111);background:none;text-decoration:none;cursor:pointer;transition:background .25s cubic-bezier(.16,1,.3,1),color .25s cubic-bezier(.16,1,.3,1),transform .4s cubic-bezier(.16,1,.3,1)}.ds-btn:hover,.ds-btn:focus-visible{background:var(--fg,#111);color:var(--bg,#fff);transform:translateY(-2px)}.ds-btn:focus-visible{outline:2px solid currentColor;outline-offset:4px}.ds-btn__arrow{width:1em;height:1em;transition:transform .3s cubic-bezier(.16,1,.3,1)}.ds-btn:hover .ds-btn__arrow{transform:translateX(.25em)}"
+    },
+    {
+      "name": "Pill Button",
+      "kind": "button",
+      "refersTo": "button-pill",
+      "description": "Card and form CTA: the same pill at base size, no arrow.",
+      "html": "<button class=\"ds-btn-s\" type=\"button\"><span>Zapytaj o ofertę</span></button>",
+      "css": ".ds-btn-s{display:inline-flex;align-items:center;padding:.95em 1.5em;border:1.5px solid currentColor;border-radius:999px;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:var(--fg,#111);background:none;cursor:pointer;transition:background .25s cubic-bezier(.16,1,.3,1),color .25s cubic-bezier(.16,1,.3,1),transform .4s cubic-bezier(.16,1,.3,1)}.ds-btn-s:hover,.ds-btn-s:focus-visible{background:var(--fg,#111);color:var(--bg,#fff);transform:translateY(-2px)}.ds-btn-s:focus-visible{outline:2px solid currentColor;outline-offset:4px}"
+    },
+    {
+      "name": "Stage Hint and Skip",
+      "kind": "button",
+      "refersTo": "button-stage-skip",
+      "description": "The two pills on the arrival layer, both in the label token on a 92% paper plate; Pomiń adds an ink hairline. Never inherit the layer colour.",
+      "html": "<div style=\"background:#1f49b5;padding:24px;display:flex;gap:16px;align-items:center;justify-content:space-between\"><p class=\"ds-stage-hint\">Zetrzyj warstwę, żeby wejść</p><button class=\"ds-stage-skip\" type=\"button\">Pomiń</button></div>",
+      "css": ".ds-stage-skip{border:1.5px solid #111;background:rgba(255,255,255,.92);color:#111;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:.75em 1.3em;border-radius:999px;cursor:pointer}.ds-stage-skip:hover,.ds-stage-skip:focus-visible{background:#fff}.ds-stage-skip:focus-visible{outline:2px solid #fff;outline-offset:4px}.ds-stage-hint{margin:0;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#111;background:rgba(255,255,255,.92);padding:.6em 1.1em;border-radius:999px}"
+    },
+    {
+      "name": "Brandmark and Hexagon",
+      "kind": "nav",
+      "refersTo": "button-hex-menu",
+      "description": "Top bar: 44px mascot cameo with the wordmark in Bricolage 800 sentence case, and the 84px ink hexagon with the label token in paper; rotates 30deg on hover.",
+      "html": "<div style=\"display:flex;align-items:center;justify-content:space-between;gap:24px\"><a class=\"ds-brandmark\" href=\"#\"><span class=\"ds-brandmark__cameo\"></span><span class=\"ds-brandmark__name\">Fresh Fingers</span></a><button class=\"ds-hex\" type=\"button\" aria-expanded=\"false\"><svg class=\"ds-hex__shape\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M50 2 93 27v46L50 98 7 73V27z\"/></svg><span class=\"ds-hex__label\">Menu</span></button></div>",
+      "css": ".ds-brandmark{display:inline-flex;align-items:center;gap:12px;color:var(--fg,#111);text-decoration:none}.ds-brandmark__cameo{width:44px;height:44px;border-radius:50%;border:1.5px solid currentColor;display:block}.ds-brandmark__name{font-family:var(--display,'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif);font-variation-settings:'opsz' 96;font-weight:800;font-size:1.3rem;letter-spacing:-.02em}.ds-hex{position:relative;width:84px;height:84px;border:0;background:none;padding:0;cursor:pointer;display:grid;place-items:center;color:#111}.ds-hex__shape{position:absolute;inset:0;width:100%;height:100%;fill:var(--ink,#111);transition:fill .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}.ds-hex__label{position:relative;color:var(--paper,#fff);font-family:var(--sans,'Figtree',system-ui,sans-serif);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}.ds-hex:hover .ds-hex__shape{transform:rotate(30deg)}.ds-hex:focus-visible{outline:2px solid currentColor;outline-offset:4px}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Informational claim chip: hairline pill in currentColor, the label token, no fill, no selected state.",
+      "html": "<ul class=\"ds-chips\"><li>Mint</li><li>10 szt.</li><li>0% alkoholu</li><li>bez cukru</li><li>bez płukania</li></ul>",
+      "css": ".ds-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}.ds-chips li{border:1.5px solid currentColor;border-radius:999px;padding:.4em .95em;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}"
+    },
+    {
+      "name": "Chapter Heading",
+      "kind": "custom",
+      "refersTo": "chapter-blue",
+      "description": "Brand chapter head: the brand name in Bricolage 800 uppercase with the Newsreader italic tagline beneath, on the brand field; no logotype.",
+      "html": "<div class=\"ds-chapter\"><h2 class=\"ds-chapter__name\">Fresh Fingers</h2><p class=\"ds-chapter__tag\">Clean habits. Brighter days.</p></div>",
+      "css": ".ds-chapter{background:#1f49b5;color:#fff;padding:48px;display:grid;gap:1.1rem}.ds-chapter__name{margin:0;font-family:var(--display,'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif);font-variation-settings:'opsz' 96;font-weight:800;text-transform:uppercase;letter-spacing:-.035em;line-height:.9;font-size:clamp(2.8rem,6.6vw,6.2rem)}.ds-chapter__tag{margin:0;font-family:var(--serif,'Newsreader',Georgia,serif);font-style:italic;font-weight:500;font-size:clamp(1.3rem,2.4vw,2.2rem)}"
+    },
+    {
+      "name": "Framed Card",
+      "kind": "card",
+      "refersTo": "card-frame",
+      "description": "Square hairline frame on the page colour, no fill, no shadow, no corner marks; headline in sentence case with one italic word.",
+      "html": "<article class=\"ds-frame\"><h2 class=\"ds-frame__h\">Dla <em>inwestorów</em></h2><ul class=\"ds-points\"><li><strong>Platforma, nie produkt.</strong> Jedna chusteczka, cztery marki, cztery kanały.</li><li><strong>Producent.</strong> ADA Group Sp. z o.o., Katowice.</li></ul></article>",
+      "css": ".ds-frame{border:1.5px solid currentColor;padding:clamp(28px,4vw,56px);display:grid;gap:1.2rem;background:none;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-size:17px;line-height:1.5;color:var(--fg,#111)}.ds-frame__h{margin:0;font-family:var(--display,'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif);font-variation-settings:'opsz' 96;font-weight:800;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1;letter-spacing:-.025em;text-wrap:balance}.ds-frame__h em{font-family:var(--serif,'Newsreader',Georgia,serif);font-style:italic;font-weight:500;font-size:1.06em;letter-spacing:-.01em}.ds-points{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}.ds-points li{padding-left:1.5rem;position:relative;font-size:1rem}.ds-points li::before{content:'';position:absolute;left:0;top:.7em;width:.9rem;height:1.5px;background:currentColor}.ds-points strong{font-weight:700}"
+    },
+    {
+      "name": "Underline Field",
+      "kind": "input",
+      "refersTo": "input-underline",
+      "description": "Transparent field with a 1.5px currentColor underline that doubles on focus; label above in the Grey label token.",
+      "html": "<label class=\"ds-field\"><span>E-mail</span><input type=\"email\" name=\"email\" placeholder=\"\"></label>",
+      "css": ".ds-field{display:grid;gap:.45rem;font-family:var(--sans,'Figtree',system-ui,sans-serif);color:var(--fg,#111)}.ds-field>span{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--grey,#6b6b6b)}.ds-field input{font:inherit;font-size:17px;color:inherit;background:transparent;border:0;border-bottom:1.5px solid currentColor;padding:.6rem 0;border-radius:0;width:100%}.ds-field input:focus{outline:none;box-shadow:0 1.5px 0 currentColor}"
+    },
+    {
+      "name": "Marquee",
+      "kind": "custom",
+      "refersTo": "marquee",
+      "description": "Ink strip of tracked caps in paper scrolling left; the only marquee variant, used twice on the page.",
+      "html": "<div class=\"ds-marquee\" aria-hidden=\"true\"><div class=\"ds-marquee__track\"><span>Life happens between brushings · </span><span>Life happens between brushings · </span><span>Life happens between brushings · </span><span>Life happens between brushings · </span></div></div>",
+      "css": ".ds-marquee{overflow:hidden;background:#111;color:#fff;border-top:1.5px solid #111;border-bottom:1.5px solid #111;padding:.55em 0;font-family:var(--sans,'Figtree',system-ui,sans-serif);font-size:.82rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}.ds-marquee__track{display:inline-flex;animation:ds-marquee 22s linear infinite}.ds-marquee__track span{padding-right:1.5em}@keyframes ds-marquee{to{transform:translateX(-50%)}}@media (prefers-reduced-motion:reduce){.ds-marquee__track{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wiped Page",
+    "overview": "The site is a white sheet printed in one ink, and colour exists only as whole drenched fields. The product's own gesture (a finger wipe) is the system's signature and its only transition: on arrival the visitor stands in front of one full-viewport canvas split into the four brand panels side by side, each panel carrying that brand's name in Bricolage caps, its pack line in Newsreader italic beneath, and the real pack standing in the panel's lower band so that when the layer is gone it has landed on its twin on the hero shelf. The visitor erases the layer by hand with the mascot's finger holding the wipe as the cursor; when under 10% remains the stage clears and the white page is theirs. Further down, each brand chapter is wiped in over the previous brand's colour and the body itself re-inks to whichever chapter sits under the viewport. Nothing slides or zooms; things are erased or they change colour.\n\nThe idiom is Marvis, re-cut without ornament. Bricolage Grotesque 800 at optical size 96 carries every heading and the brandmark itself. It is uppercase in exactly three places: the giant hero claim, the four brand names on the arrival layer, and the four chapter names. Everywhere else (section headings, the brandmark in the bar and footer) it is sentence case. Inside each heading exactly one word turns to Newsreader italic 500; the same italic carries the hero caption, the chapter taglines, the footer tagline and the closing statement line. Figtree does all the rest: 400 body and one label token, 700 at 0.72rem tracked 0.14em in caps, that is the same on a pack name, a chip, a caption, a spec term, a form label, a footer heading, the hexagon label and the stage's hint and skip pills. Structure is a 1.5px currentColor hairline, buttons are pills with one arrow, and the only geometric silhouette is the hexagon menu button.\n\nDensity is generous and centred inside one 1240px column: a hero that fills the viewport with the claim and four real packs on a staggered shelf, an ink marquee, a statement with six mascot moments, four full-height chapters, a second ink marquee, one framed product card, two framed partner cards, one contact grid, one ink footer. The only imagery is the owner's real cut-out packshots, the mascot cameo and the labelled mascot renders; there are no logotype marks anywhere on the page.",
+    "keyCharacteristics": [
+      "White paper and ink black as the only resting colours; four brand fields used exclusively as full-bleed chapter backgrounds and the arrival layer's four panels",
+      "Bricolage Grotesque 800 (opsz 96) for every heading and the brandmark; uppercase only for the giant claim, the arrival-layer names and the chapter names; one Newsreader italic 500 accent per heading; Figtree for body and one label token",
+      "1.5px currentColor hairlines for rules, frames, chips, pills, underlines, step numerals and radios; no ornament of any kind",
+      "One 1240px content column for every section including chapters and footer, inside a fluid gutter",
+      "Hand wipe (destination-out canvas) as the transition; body --bg/--fg morph over 0.9s on the shared --ease",
+      "Flat surfaces; depth exists only as drop-shadow filters under photographed packs and under the wipe sprite"
+    ],
+    "rules": [
+      { "name": "The Whole-Block Rule", "body": "A brand field is used only as a full-bleed background (chapter or arrival panel). It never appears as a button fill, chip fill, text colour, border, or tint. The one tolerated exception is red for form error text.", "section": "colors" },
+      { "name": "The Follow-the-Chapter Rule", "body": "Colour changes happen on body via --bg/--fg (0.9s, --ease), driven by the chapter under the 55% line of the viewport (.is-light is set when the foreground is paper, which turns the hexagon white). Components never carry a background of their own; they inherit currentColor so they re-ink with the page. The only fixed-colour surfaces are the marquees, the menu, the footer and the stage plates.", "section": "colors" },
+      { "name": "The One Italic Rule", "body": "Every heading and statement carries at most one Newsreader italic word or phrase, marked with em. The italic is the accent; two accents in one heading is a defect. The heading itself is never italic and the italic is never uppercase.", "section": "typography" },
+      { "name": "The Three-Caps Rule", "body": "Bricolage is uppercase in exactly three places: the giant hero claim, the brand names on the arrival layer, and the chapter names. Section headings and the brandmark (bar and footer) are Bricolage 800 in sentence case. Bricolage is never used at body or label size; Figtree is never used for a heading.", "section": "typography" },
+      { "name": "The One Label Rule", "body": "Every small caption, term, chip, tag or heading-of-a-list is the same token: Figtree 700, 0.72rem, 0.14em tracked caps. Only the button label, the marquee and the product steps may run larger; a new small-caps size is a defect. Note: the CSS declares 600 on buttons, marquees and steps but the project ships Figtree 400/500/700 only, so 600 renders as 700; treat every tracked-caps weight as 700 in practice.", "section": "typography" },
+      { "name": "The Object-Only Shadow Rule", "body": "Shadows belong to photographed objects (packs) and the sprite, and only as drop-shadow filters. Cards, buttons, chips, inputs, pills, the menu and the top bar never cast one, and no pack ever stands on a separate ellipse or plate; a hairline or a colour change does their work.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the page white with ink type at rest and let colour arrive only as a full-bleed chapter or arrival panel that the body itself morphs to (--bg/--fg, 0.9s, --ease).",
+      "Do set every heading and the brandmark in Bricolage Grotesque 800 at 'opsz' 96: uppercase only for the giant hero claim, the arrival-layer names and the chapter names; sentence case everywhere else; with exactly one Newsreader italic 500 em inside each heading.",
+      "Do name a chapter with the brand name in {typography.display-brand} and its tagline in Newsreader italic beneath; no logotype marks.",
+      "Do use the one label token (Figtree 700, 0.72rem, 0.14em caps) for every pack name, chip, caption, spec term, form label, footer heading, hexagon label and stage pill.",
+      "Do keep every section's content inside the 1240px column, including chapters and the footer.",
+      "Do draw every structural line, frame, chip, pill and underline as 1.5px currentColor so it re-inks with the chapter.",
+      "Do make every button a hairline pill; the primary CTA carries the single stroked arrow, and hover inverts to var(--fg) on var(--bg).",
+      "Do transition between colours by wiping (destination-out canvas, hand-driven on arrival with the finger-and-wipe sprite, auto S-path for chapters) and provide the static path (?static, reduced motion) with chapters painted directly.",
+      "Do use the owner's real cut-out packshots with the object-only drop-shadow filters listed under Elevation, and keep both marquees ink on paper text.",
+      "Do use cubic-bezier(.16,1,.3,1) for CSS state transitions and expo/power/sine GSAP eases for scripted beats; keep to the three motion beats (arrival wipe, chapter wipe and colour, statement rise)."
+    ],
+    "donts": [
+      "Don't use a brand field as a button, chip, badge or text colour, or as a tint or gradient; the only non-field use of a brand colour is red for form errors.",
+      "Don't add slides, zooms or generic scroll reveals as transitions; the wipe and the body colour morph are the transition vocabulary (the statement's one-time rise is the sole fade).",
+      "Don't add ornaments of any kind: no flourishes, filigree, curls, corner marks, dividers with glyphs, or decorative rules beyond the plain hairline.",
+      "Don't add box-shadows, painted contact ellipses under packs, filled cards, radii on cards or inputs, or borders thinner than 1.5px (the 1px spec divider and legal rule are the exceptions).",
+      "Don't introduce icon fonts or icon sets; the stroked arrow is the only icon and it appears only inside the primary pill.",
+      "Don't set Bricolage in uppercase outside the three sanctioned places, at body or label size, or Figtree in a heading; the arrival canvas draws in the same three faces as the page.",
+      "Don't invent a second label size or a second marquee variant; a new small-caps style or a paper marquee is a defect.",
+      "Don't show mascot renders without the \"rendery poglądowe\" disclaimer, and never present a render as a product photo."
+    ]
+  }
+}

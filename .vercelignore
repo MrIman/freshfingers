@@ -1,0 +1,17 @@
+.impeccable
+.git
+*.pdf
+*.docx
+*.mov
+*.zip
+assets/packs-real/*.jpg
+assets/plates/room-*.png
+assets/plates/section-strip.png
+assets/plates/poche-texture.png
+assets/plates/icon-*.png
+assets/plates/headline-lettering.png
+assets/plates/product-detail.png
+assets/img/wipe-detail.png
+assets/fonts/bricolage-600-*.woff2
+DESIGN.md
+PRODUCT.md

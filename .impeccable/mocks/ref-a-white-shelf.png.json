@@ -1,0 +1,6 @@
+{
+  "prompt": "gpt-image-2 text2image 16:9: Marvis-idiom white page, hexagon MENU, giant serif caps FRESH WHEN / YOU NEED IT. with NEED italic, flourish rule, italic caption 'cztery marki, jedna chusteczka', four wipe boxes on a shelf, ornament button POZNAJ MARKI. Reference only (code-led round); not an approved comp.",
+  "model": "gpt-image-2",
+  "approved": false,
+  "role": "critique reference, code-led build"
+}

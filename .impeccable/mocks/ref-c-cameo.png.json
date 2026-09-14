@@ -1,0 +1,6 @@
+{
+  "prompt": "gpt-image-2 text2image 16:9: Marvis-idiom white page, giant serif caps left, baroque oval cameo frame with the mascot right, four boxes below, marquee 'LIFE HAPPENS BETWEEN BRUSHINGS'. Reference only (code-led round); not an approved comp.",
+  "model": "gpt-image-2",
+  "approved": false,
+  "role": "critique reference, code-led build"
+}

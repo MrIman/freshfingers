@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import { decodePng } from '/Users/igormanka/.claude/plugins/cache/impeccable/impeccable/4.1.3/skills/impeccable/scripts/lib/png.mjs';
+import { crop, resize } from '/Users/igormanka/.claude/plugins/cache/impeccable/impeccable/4.1.3/skills/impeccable/scripts/lib/raster.mjs';
+import { structureScore, colorScore } from '/Users/igormanka/.claude/plugins/cache/impeccable/impeccable/4.1.3/skills/impeccable/scripts/lib/image-metrics.mjs';
+const comp=decodePng(fs.readFileSync('.impeccable/mocks/comp-6-date-rooms.png'));
+const build=decodePng(fs.readFileSync(process.argv[2]));
+const b = build.width===comp.width ? build : resize(build, comp.width, Math.round(build.height*comp.width/build.width));
+const [x,y,w,h]=[215,185,475,185];
+const a=crop(comp,x,y,w,h), c=crop(b,x,y,w,h);
+const cs=colorScore(a,c);
+console.log(process.argv[3]||'', 'structure', structureScore(a,c).toFixed(3), 'color', (typeof cs==='number'?cs:cs.score).toFixed(3), typeof cs==='object'?JSON.stringify(cs):'');

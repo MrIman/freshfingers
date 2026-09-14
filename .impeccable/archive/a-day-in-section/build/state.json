@@ -1,0 +1,485 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-04T21:52:09.884Z",
+  "comp": ".impeccable/mocks/comp-6-date-rooms.png",
+  "direction": "3b2a7bd1",
+  "breakpoint": "2304x1296",
+  "artifact": null,
+  "phase": "review",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-09-04T21:52:09.883Z",
+      "closedAt": "2026-09-04T22:28:34.990Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "6 comps, 1 approved",
+        "approved": ".impeccable/mocks/comp-6-date-rooms.png",
+        "at": "2026-09-04T22:28:34.989Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-09-04T22:28:35.051Z",
+      "closedAt": "2026-09-04T22:32:07.154Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "23 regions, 8 plates, 11 text regions measured",
+        "at": "2026-09-04T22:32:07.153Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-09-04T22:32:07.154Z",
+      "closedAt": "2026-09-04T22:48:06.566Z",
+      "attempts": 7,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "8/8 plates",
+        "at": "2026-09-04T22:48:06.564Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "closed",
+      "openedAt": "2026-09-04T22:48:06.566Z",
+      "closedAt": "2026-09-04T22:59:05.635Z",
+      "attempts": 7,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "hero 83% (match)",
+        "score": 0.8347,
+        "verdict": "match",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": ".impeccable/review/diff/hero/side-by-side.png",
+        "worst": [
+          "caption drift 57%",
+          "headline drift 57%",
+          "wordmark drift 58%"
+        ],
+        "worstIds": [
+          "caption",
+          "headline",
+          "wordmark"
+        ],
+        "worstCrops": [
+          {
+            "id": "caption",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.5717,
+              "structure": 0.5264,
+              "color": 0.9416,
+              "colorIntersection": 0.8845,
+              "paletteMatch": 0.9724,
+              "detail": 0.124,
+              "detailRaw": 0.4105,
+              "detailAdded": 0.5729,
+              "bands": 0.5455
+            },
+            "file": ".impeccable/review/diff/hero/regions/caption.png"
+          },
+          {
+            "id": "headline",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.5749,
+              "structure": 0.5054,
+              "color": 0.6995,
+              "colorIntersection": 0.5677,
+              "paletteMatch": 0.7704,
+              "detail": 0.4752,
+              "detailRaw": 0.5013,
+              "detailAdded": 0.0521,
+              "bands": 0.76
+            },
+            "file": ".impeccable/review/diff/hero/regions/headline.png"
+          },
+          {
+            "id": "wordmark",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.5759,
+              "structure": 0.3133,
+              "color": 0.8686,
+              "colorIntersection": 0.7785,
+              "paletteMatch": 0.917,
+              "detail": 0.6808,
+              "detailRaw": 0.7381,
+              "detailAdded": 0.1146,
+              "bands": 1
+            },
+            "file": ".impeccable/review/diff/hero/regions/wordmark.png"
+          }
+        ],
+        "advisories": [
+          "(advisory, unchanged for 3+ attempts) text cta-kontakt: letter-spacing is wider than the comp's (gap 0.094 vs 0.057 of the cap height); set letter-spacing to close it by about 1px",
+          "(advisory, unchanged for 3+ attempts) text caption: letter-spacing is wider than the comp's (gap 0.139 vs 0.093 of the cap height); set letter-spacing to close it by about 1px"
+        ],
+        "regionVerdicts": {
+          "wordmark": "drift",
+          "tagline": "drift",
+          "nav-links": "drift",
+          "nav-kontakt": "drift",
+          "room-1": "drift",
+          "room-2": "drift",
+          "room-3": "drift",
+          "room-4": "drift",
+          "headline": "drift",
+          "poche-texture": "match",
+          "brand-rail": "drift",
+          "rail-line": "match",
+          "rail-marker": "drift",
+          "icon-alcohol": "drift",
+          "claim-alcohol": "drift",
+          "icon-sugar": "match",
+          "claim-sugar": "match",
+          "icon-rinse": "drift",
+          "claim-rinse": "drift",
+          "subline": "match",
+          "cta-deck": "drift",
+          "cta-kontakt": "match",
+          "caption": "drift"
+        },
+        "at": "2026-09-04T23:39:17.574Z"
+      },
+      "forced": null,
+      "readingsSeen": {
+        "text wordmark: letter-spacing is wider than the comp's (gap 0.173 vs 0.114 of the cap height); set letter-spacing to close it by about 3px": 1,
+        "text claim-rinse: cap height 30.6px in the build, 16.5px in the comp (+85%); set font-size so the cap height renders at 16.5px": 1,
+        "text claim-sugar: its first line starts 22px higher than in the comp (0px vs 22px into the region box); the spacing above it is too small": 1,
+        "text claim-rinse: its first line starts 22px higher than in the comp (0px vs 22px into the region box); the spacing above it is too small": 1,
+        "text subline: its first line starts 13px higher than in the comp (8px vs 21px into the region box); the spacing above it is too small": 1,
+        "text cta-kontakt: letter-spacing is wider than the comp's (gap 0.092 vs 0.057 of the cap height); set letter-spacing to close it by about 1px": 2,
+        "text cta-kontakt: letter-spacing is wider than the comp's (gap 0.094 vs 0.057 of the cap height); set letter-spacing to close it by about 1px": 6,
+        "text caption: letter-spacing is wider than the comp's (gap 0.139 vs 0.093 of the cap height); set letter-spacing to close it by about 1px": 6
+      },
+      "records": 9,
+      "history": [
+        {
+          "at": "2026-09-04T22:52:03.073Z",
+          "score": 0.7448,
+          "worstIds": [
+            "icon-rinse",
+            "icon-sugar",
+            "headline"
+          ],
+          "regionVerdicts": {
+            "wordmark": "drift",
+            "tagline": "drift",
+            "nav-links": "drift",
+            "nav-kontakt": "drift",
+            "room-1": "drift",
+            "room-2": "drift",
+            "room-3": "drift",
+            "room-4": "drift",
+            "headline": "drift",
+            "poche-texture": "missing",
+            "brand-rail": "drift",
+            "rail-line": "match",
+            "rail-marker": "drift",
+            "icon-alcohol": "drift",
+            "claim-alcohol": "drift",
+            "icon-sugar": "drift",
+            "claim-sugar": "drift",
+            "icon-rinse": "drift",
+            "claim-rinse": "drift",
+            "subline": "match",
+            "cta-deck": "contradicted",
+            "cta-kontakt": "match",
+            "caption": "drift"
+          },
+          "artifactHash": "14f08c1394a2"
+        },
+        {
+          "at": "2026-09-04T22:53:16.541Z",
+          "score": 0.7772,
+          "worstIds": [
+            "cta-deck",
+            "headline",
+            "wordmark"
+          ],
+          "regionVerdicts": {
+            "wordmark": "drift",
+            "tagline": "drift",
+            "nav-links": "drift",
+            "nav-kontakt": "drift",
+            "room-1": "drift",
+            "room-2": "drift",
+            "room-3": "drift",
+            "room-4": "drift",
+            "headline": "drift",
+            "poche-texture": "match",
+            "brand-rail": "drift",
+            "rail-line": "match",
+            "rail-marker": "drift",
+            "icon-alcohol": "drift",
+            "claim-alcohol": "drift",
+            "icon-sugar": "drift",
+            "claim-sugar": "drift",
+            "icon-rinse": "drift",
+            "claim-rinse": "drift",
+            "subline": "match",
+            "cta-deck": "contradicted",
+            "cta-kontakt": "match",
+            "caption": "drift"
+          },
+          "artifactHash": "9f33deff681f"
+        },
+        {
+          "at": "2026-09-04T22:54:41.793Z",
+          "score": 0.7754,
+          "worstIds": [
+            "cta-deck",
+            "headline",
+            "wordmark"
+          ],
+          "regionVerdicts": {
+            "wordmark": "drift",
+            "tagline": "drift",
+            "nav-links": "drift",
+            "nav-kontakt": "drift",
+            "room-1": "drift",
+            "room-2": "drift",
+            "room-3": "drift",
+            "room-4": "drift",
+            "headline": "drift",
+            "poche-texture": "match",
+            "brand-rail": "drift",
+            "rail-line": "match",
+            "rail-marker": "drift",
+            "icon-alcohol": "drift",
+            "claim-alcohol": "drift",
+            "icon-sugar": "drift",
+            "claim-sugar": "drift",
+            "icon-rinse": "drift",
+            "claim-rinse": "drift",
+            "subline": "match",
+            "cta-deck": "contradicted",
+            "cta-kontakt": "match",
+            "caption": "drift"
+          },
+          "artifactHash": "9f33deff681f"
+        },
+        {
+          "at": "2026-09-04T22:56:43.165Z",
+          "score": 0.8161,
+          "worstIds": [
+            "cta-deck",
+            "headline",
+            "wordmark"
+          ],
+          "regionVerdicts": {
+            "wordmark": "drift",
+            "tagline": "drift",
+            "nav-links": "drift",
+            "nav-kontakt": "drift",
+            "room-1": "drift",
+            "room-2": "drift",
+            "room-3": "drift",
+            "room-4": "drift",
+            "headline": "drift",
+            "poche-texture": "match",
+            "brand-rail": "drift",
+            "rail-line": "match",
+            "rail-marker": "drift",
+            "icon-alcohol": "drift",
+            "claim-alcohol": "drift",
+            "icon-sugar": "drift",
+            "claim-sugar": "drift",
+            "icon-rinse": "drift",
+            "claim-rinse": "drift",
+            "subline": "match",
+            "cta-deck": "contradicted",
+            "cta-kontakt": "match",
+            "caption": "drift"
+          },
+          "artifactHash": "49eb4595f30d"
+        },
+        {
+          "at": "2026-09-04T22:57:28.582Z",
+          "score": 0.8157,
+          "worstIds": [
+            "cta-deck",
+            "headline",
+            "wordmark"
+          ],
+          "regionVerdicts": {
+            "wordmark": "drift",
+            "tagline": "drift",
+            "nav-links": "drift",
+            "nav-kontakt": "drift",
+            "room-1": "drift",
+            "room-2": "drift",
+            "room-3": "drift",
+            "room-4": "drift",
+            "headline": "drift",
+            "poche-texture": "match",
+            "brand-rail": "drift",
+            "rail-line": "match",
+            "rail-marker": "drift",
+            "icon-alcohol": "drift",
+            "claim-alcohol": "drift",
+            "icon-sugar": "drift",
+            "claim-sugar": "drift",
+            "icon-rinse": "drift",
+            "claim-rinse": "drift",
+            "subline": "match",
+            "cta-deck": "contradicted",
+            "cta-kontakt": "match",
+            "caption": "drift"
+          },
+          "artifactHash": "49eb4595f30d"
+        },
+        {
+          "at": "2026-09-04T22:59:05.635Z",
+          "score": 0.8194,
+          "worstIds": [
+            "headline",
+            "wordmark",
+            "caption"
+          ],
+          "regionVerdicts": {
+            "wordmark": "drift",
+            "tagline": "drift",
+            "nav-links": "drift",
+            "nav-kontakt": "drift",
+            "room-1": "drift",
+            "room-2": "drift",
+            "room-3": "drift",
+            "room-4": "drift",
+            "headline": "drift",
+            "poche-texture": "match",
+            "brand-rail": "drift",
+            "rail-line": "match",
+            "rail-marker": "drift",
+            "icon-alcohol": "drift",
+            "claim-alcohol": "drift",
+            "icon-sugar": "drift",
+            "claim-sugar": "drift",
+            "icon-rinse": "drift",
+            "claim-rinse": "drift",
+            "subline": "match",
+            "cta-deck": "drift",
+            "cta-kontakt": "match",
+            "caption": "drift"
+          },
+          "artifactHash": "49eb4595f30d"
+        }
+      ]
+    },
+    "sections": {
+      "status": "closed",
+      "openedAt": "2026-09-04T22:59:05.635Z",
+      "closedAt": "2026-09-04T23:05:59.013Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-09-04T23:05:59.013Z"
+      },
+      "forced": null
+    },
+    "motion": {
+      "status": "closed",
+      "openedAt": "2026-09-04T23:05:59.013Z",
+      "closedAt": "2026-09-04T23:10:00.500Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-09-04T23:10:00.499Z"
+      },
+      "forced": null
+    },
+    "responsive": {
+      "status": "closed",
+      "openedAt": "2026-09-04T23:10:00.500Z",
+      "closedAt": "2026-09-04T23:13:24.695Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "desktop 83% (match)",
+        "score": 0.8267,
+        "sideBySide": ".impeccable/review/diff/desktop/side-by-side.png",
+        "at": "2026-09-04T23:13:24.694Z"
+      },
+      "forced": null
+    },
+    "review": {
+      "status": "closed",
+      "openedAt": "2026-09-04T23:13:24.695Z",
+      "closedAt": "2026-09-04T23:39:23.557Z",
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": {
+    "disposition": "fix",
+    "at": "2026-09-04T23:39:23.556Z",
+    "phaseAtFinish": "review"
+  },
+  "plates": {
+    "room-1": {
+      "status": "ok",
+      "score": 0.7381,
+      "size": "1140x1498"
+    },
+    "room-2": {
+      "status": "ok",
+      "score": 0.7021,
+      "size": "764x1498"
+    },
+    "room-3": {
+      "status": "ok",
+      "score": 0.6632,
+      "size": "893x1498"
+    },
+    "room-4": {
+      "status": "ok",
+      "score": 0.646,
+      "size": "1011x1498"
+    },
+    "poche-texture": {
+      "status": "ok",
+      "score": 0.8481,
+      "size": "592x88"
+    },
+    "icon-alcohol": {
+      "status": "ok",
+      "score": 0.7453,
+      "size": "1024x1024"
+    },
+    "icon-sugar": {
+      "status": "ok",
+      "score": 0.6137,
+      "size": "1024x1024"
+    },
+    "icon-rinse": {
+      "status": "ok",
+      "score": 0.7808,
+      "size": "1024x1024"
+    }
+  }
+}

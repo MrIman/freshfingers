@@ -1,0 +1,110 @@
+{
+  "title": "Re-roll: a bolder hand for the Fresh Fingers landing page",
+  "question": "Bolder register. The deal leads with A Day in Section. Keep it, take an alternate, or re-roll again.",
+  "options": [
+    {
+      "id": "challenger-daylight",
+      "label": "A Day in Section",
+      "kicker": "THE ROLL",
+      "lineage": "Architects' daylight sections: one long cut through a building, the sunbeam travelling through rooms with time stamps",
+      "thesis": "The page is one continuous section through a single day; a travelling band of light moves from 08:12 coffee to 23:40 club, and every room it reaches is a Fresh Fingers moment.",
+      "palette": ["#F7F4EC", "#1A1A1A", "#F2B21B", "#1F49B5", "#E3262B", "#C8F542"],
+      "materials": ["limewash white", "charcoal section poche", "gold light band", "flat colour rooms"],
+      "viewport": "Bright limewash page cut as an architectural section: a horizontal charcoal ground line with rooms drawn above it; huge lowercase-free caps FRESH WHEN YOU NEED IT. set as the building's title with tabular time stamps 08:12 · 13:00 · 18:30 · 23:40 pinned beside each room; a gold light band crossing the first room where the Fresh Fingers pack stands; four rooms in four brand colours further along the section; 'Pobierz deck' and 'Kontakt' pinned as annotations in the margin.",
+      "risk": "Reads like an architecture studio if the rooms stay empty; the packs and moments must inhabit every room.",
+      "raised": [
+        {"from": "challenger-neon", "raise": "The headline draws itself as one continuous stroke on load, never a fade."},
+        {"from": "challenger-drum-machine", "raise": "The section is one unbroken horizontal line that never wraps; a running 'now' marker always shows where the light is."},
+        {"from": "challenger-arcade", "raise": "Palette law: each brand owns exactly its colours and nothing on the page is off-palette."}
+      ],
+      "comp": ".impeccable/mocks/decision/r1-daylight.png",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section.webp"
+    },
+    {
+      "id": "challenger-bauhaus",
+      "label": "Foundation Workshop",
+      "verdict": "competitive",
+      "lineage": "Bauhaus Vorkurs: primary circle, square, triangle tested as material exercises on white tables",
+      "thesis": "Four brands as four primary forms on a white worktable; every section is one compositional exercise you can push around.",
+      "palette": ["#FFFFFF", "#111111", "#1F49B5", "#E3262B", "#F2C300", "#C8F542"],
+      "materials": ["worktable white", "flat primary planes", "black ink rules", "visible baseline grid"],
+      "viewport": "White field with a faint baseline grid; a huge blue square, red circle, lime triangle and navy bar arranged off-centre like instruments on a table, each holding its pack; the headline in single-case geometric sans 'fresh when you need it.' running along one rule; small ink labels name the brands; 'pobierz deck' as a black ink button on the rule.",
+      "case": "Beats the leader on product clarity (packs as planes on white read in one second) and holds audience identification as premium design canon; loses the 'moment' story the leader tells.",
+      "risk": "Can read as a design-school exercise unless the packs, not the shapes, are the subject.",
+      "comp": ".impeccable/mocks/decision/r1-bauhaus.png",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-bauhaus-foundation-workshop-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/design-canon-bauhaus-foundation-workshop.webp"
+    },
+    {
+      "id": "challenger-polish-poster",
+      "label": "Polska Szkoła Plakatu",
+      "verdict": "competitive",
+      "lineage": "The Polish poster school: one painted metaphor swallowing the sheet, hand-lettered title bent to the image",
+      "thesis": "One painted metaphor per section, a mouth that is also a city at night, a smile that is also a doorway; the title lettered by the same brush.",
+      "palette": ["#F4E3C1", "#7A2FA0", "#E3262B", "#1F49B5", "#C8F542"],
+      "materials": ["gouache", "poster stock", "brush lettering", "paint bleed"],
+      "viewport": "A single painted image fills the viewport: a huge open smile whose teeth are a row of four packs in four colours; FRESH WHEN YOU NEED IT. hand-lettered along the lip line; the Polish subline painted small in a corner; 'Pobierz deck' as a painted stamp.",
+      "case": "Wins audience identification outright for a Polish company and gives the illustration you asked for; loses product clarity when the metaphor swallows the pack.",
+      "risk": "Art over information: partners need the pack to read in three seconds.",
+      "comp": ".impeccable/mocks/decision/r1-polish-poster.png",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-polish-film-poster-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/posters-covers-sleeves-polish-film-poster.webp"
+    },
+    {
+      "id": "challenger-neon",
+      "label": "Hand-Bent Neon Circuit",
+      "verdict": "declined",
+      "lineage": "Neon fabrication: one continuous glass stroke, gas, electrodes",
+      "thesis": "The brand as one continuous lit stroke.",
+      "palette": ["#0A0A0A", "#2B5CFF", "#FF3B3B"],
+      "materials": ["glass tube", "gas glow"],
+      "viewport": "One continuous cobalt script across a dark room.",
+      "risk": "Dark room again.",
+      "case": "Loses both axes after your steer: it needs a dark room, and a single glow colour cannot carry four brands.",
+      "kept": "Headline draws itself as one continuous stroke.",
+      "hero": "https://impeccable.style/worlds/cards/magnetism-electricity-plasma-hand-bent-neon-circuit-hero.webp"
+    },
+    {
+      "id": "challenger-drum-machine",
+      "label": "Rhythm Machine Step Row",
+      "verdict": "declined",
+      "lineage": "Early-80s drum machine: sixteen candy step keys under a chase light",
+      "thesis": "The day as a sixteen-step pattern.",
+      "palette": ["#2A2A2A", "#E3262B", "#F28C1B", "#F2C300", "#FFFFFF"],
+      "materials": ["charcoal panel", "LED glow", "silkscreen"],
+      "viewport": "One unbroken step row across the page.",
+      "risk": "Charcoal panel is another dark ground.",
+      "case": "Loses both axes: a charcoal instrument panel is dark, and a step sequencer is a gimmick for this audience.",
+      "kept": "One unbroken line that never wraps, with a running 'now' marker.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-drum-machine-step-row-hero.webp"
+    },
+    {
+      "id": "challenger-arcade",
+      "label": "CRT Arcade Pixel Glow",
+      "verdict": "declined",
+      "lineage": "Pixel-art arcade cabinets: fat pixels, scanlines, phosphor",
+      "thesis": "The brand as a sprite on a phosphor stage.",
+      "palette": ["#000000", "#FFD700", "#00FFFF", "#FF00FF"],
+      "materials": ["pixels", "scanlines"],
+      "viewport": "A tile-grid playfield with score at the top.",
+      "risk": "Phosphor black plus retro novelty.",
+      "case": "Loses both axes: dark, and retro-gaming is not a partner or investor's world.",
+      "kept": "Strict palette law: each brand owns its colours; nothing off-palette.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-crt-arcade-pixel-glow-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "comp", "toggle": true},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The DTC oral-care page: white ground, pack hero, benefit icons, brand grid, contact strip; executed impeccably.",
+    "palette": ["#FFFFFF", "#111827", "#1F49B5", "#E3262B"],
+    "materials": ["clean grid", "pack renders on white", "soft shadows"],
+    "viewport": "Headline left, pack right, four brand tiles below, benefits row, download deck and contact at the end.",
+    "risk": "Indistinguishable from every oral-care brand by design.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

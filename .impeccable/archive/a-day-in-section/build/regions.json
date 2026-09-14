@@ -1,0 +1,282 @@
+{
+ "regions": [
+  {
+   "id": "wordmark",
+   "kind": "text",
+   "grid": "A0:B0",
+   "note": "FRESH FINGERS wordmark, heavy black condensed caps"
+  },
+  {
+   "id": "tagline",
+   "kind": "text",
+   "box": {
+    "x": 0.0269,
+    "y": 0.0772,
+    "w": 0.1771,
+    "h": 0.017
+   },
+   "note": "CLEAN HABITS. BRIGHTER DAYS. tiny tracked caps under the wordmark",
+   "grid": "A0:B0"
+  },
+  {
+   "id": "nav-links",
+   "kind": "text",
+   "box": {
+    "x": 0.7161,
+    "y": 0.0463,
+    "w": 0.1476,
+    "h": 0.0309
+   },
+   "note": "nav text links Partnerzy, Inwestorzy",
+   "grid": "H0:I0"
+  },
+  {
+   "id": "nav-kontakt",
+   "kind": "control",
+   "box": {
+    "x": 0.8854,
+    "y": 0.0309,
+    "w": 0.0933,
+    "h": 0.0602
+   },
+   "note": "outlined black pill button Kontakt",
+   "grid": "I0:J0"
+  },
+  {
+   "id": "room-1",
+   "kind": "plate",
+   "box": {
+    "x": 0.0,
+    "y": 0.1003,
+    "w": 0.2995,
+    "h": 0.6713
+   },
+   "bleed": true,
+   "note": "section room 1, Fresh Fingers: cosy cafe coffee date, two pink two-finger mascots at a round table with cappuccinos and croissant, blue wall band, pendant lamp, plant, blue FINGERS FRESH MINT box on the table, charcoal poche frame and slab",
+   "grid": "A1:C7"
+  },
+  {
+   "id": "room-2",
+   "kind": "plate",
+   "box": {
+    "x": 0.2995,
+    "y": 0.1003,
+    "w": 0.2005,
+    "h": 0.6713
+   },
+   "bleed": true,
+   "note": "section room 2, Clean&Go: white clinical kitchen, red stripe, framed mint leaf, mascot in white shirt and red tie making peace sign, glass of water, red-and-white Clean&Go box on counter, charcoal poche",
+   "grid": "D1:E7"
+  },
+  {
+   "id": "room-3",
+   "kind": "plate",
+   "box": {
+    "x": 0.5,
+    "y": 0.1003,
+    "w": 0.2344,
+    "h": 0.6713
+   },
+   "bleed": true,
+   "note": "section room 3, FreshMate: deep blue wall with white tooth-and-sparkle graphic, white counter, mascot in white hoodie holding mug, blue FreshMate box, charcoal poche",
+   "grid": "F1:H7"
+  },
+  {
+   "id": "room-4",
+   "kind": "plate",
+   "box": {
+    "x": 0.7344,
+    "y": 0.1003,
+    "w": 0.2656,
+    "h": 0.6713
+   },
+   "bleed": true,
+   "note": "section room 4, Finger Fresh: lime green graffiti wall, mascot in black leather jacket and sneakers, skateboard, milk crate, boombox, lime Finger Fresh box, charcoal poche and right post",
+   "grid": "H1:J7"
+  },
+  {
+   "id": "headline",
+   "kind": "text",
+   "grid": "B1:J2",
+   "note": "FRESH WHEN YOU NEED IT. white brush-style display caps running across all four rooms (measured on the first word FRESH over the cafe wall), NEED in italic serif; live HTML text",
+   "codeDrawn": true,
+   "box": {
+    "x": 0.0933,
+    "y": 0.1427,
+    "w": 0.2062,
+    "h": 0.1427
+   }
+  },
+  {
+   "id": "poche-texture",
+   "kind": "texture",
+   "box": {
+    "x": 0.651,
+    "y": 0.6867,
+    "w": 0.1302,
+    "h": 0.0347
+   },
+   "note": "clean cell of the charcoal speckled poche slab",
+   "grid": "G6:H7"
+  },
+  {
+   "id": "brand-rail",
+   "kind": "text",
+   "box": {
+    "x": 0.013,
+    "y": 0.7369,
+    "w": 0.9809,
+    "h": 0.044
+   },
+   "note": "monospaced caps FRESH FINGERS · CLEAN&GO · FRESHMATE · FINGER FRESH",
+   "grid": "B7:I7"
+  },
+  {
+   "id": "rail-line",
+   "kind": "chrome",
+   "box": {
+    "x": 0.013,
+    "y": 0.7809,
+    "w": 0.9809,
+    "h": 0.0293
+   },
+   "snap": false,
+   "note": "thin black horizontal rule",
+   "grid": "A7:J7"
+  },
+  {
+   "id": "rail-marker",
+   "kind": "control",
+   "box": {
+    "x": 0.2279,
+    "y": 0.7716,
+    "w": 0.0239,
+    "h": 0.0424
+   },
+   "snap": false,
+   "note": "gold dot marker on the rule under FRESH FINGERS",
+   "grid": "C7:C7"
+  },
+  {
+   "id": "icon-alcohol",
+   "kind": "image",
+   "box": {
+    "x": 0.013,
+    "y": 0.8256,
+    "w": 0.0434,
+    "h": 0.0772
+   },
+   "note": "line icon circle with 0% inside",
+   "grid": "A8:A8"
+  },
+  {
+   "id": "claim-alcohol",
+   "kind": "text",
+   "box": {
+    "x": 0.0564,
+    "y": 0.841,
+    "w": 0.0738,
+    "h": 0.0463
+   },
+   "note": "0% ALKOHOLU monospaced caps",
+   "grid": "A8:B8"
+  },
+  {
+   "id": "icon-sugar",
+   "kind": "image",
+   "box": {
+    "x": 0.1432,
+    "y": 0.8256,
+    "w": 0.0477,
+    "h": 0.0772
+   },
+   "note": "line icon crossed sugar cube",
+   "grid": "B8:B8"
+  },
+  {
+   "id": "claim-sugar",
+   "kind": "text",
+   "box": {
+    "x": 0.191,
+    "y": 0.841,
+    "w": 0.0694,
+    "h": 0.0463
+   },
+   "note": "BEZ CUKRU monospaced caps",
+   "grid": "B8:C8"
+  },
+  {
+   "id": "icon-rinse",
+   "kind": "image",
+   "box": {
+    "x": 0.2604,
+    "y": 0.8256,
+    "w": 0.0434,
+    "h": 0.0772
+   },
+   "note": "line icon crossed water drop",
+   "grid": "C8:C8"
+  },
+  {
+   "id": "claim-rinse",
+   "kind": "text",
+   "box": {
+    "x": 0.3038,
+    "y": 0.841,
+    "w": 0.0868,
+    "h": 0.0463
+   },
+   "note": "BEZ PŁUKANIA monospaced caps",
+   "grid": "D8:D8"
+  },
+  {
+   "id": "subline",
+   "kind": "text",
+   "box": {
+    "x": 0.013,
+    "y": 0.9066,
+    "w": 0.2127,
+    "h": 0.0579
+   },
+   "note": "Jeden produkt, cztery marki. sans",
+   "grid": "A9:B9"
+  },
+  {
+   "id": "cta-deck",
+   "kind": "control",
+   "box": {
+    "x": 0.7161,
+    "y": 0.8256,
+    "w": 0.1519,
+    "h": 0.0887
+   },
+   "snap": false,
+   "note": "solid black pill button Pobierz deck white text",
+   "grid": "H8:I8"
+  },
+  {
+   "id": "cta-kontakt",
+   "kind": "text",
+   "box": {
+    "x": 0.8854,
+    "y": 0.841,
+    "w": 0.1085,
+    "h": 0.0579
+   },
+   "note": "Kontakt → text link with arrow",
+   "grid": "I8:J8"
+  },
+  {
+   "id": "caption",
+   "kind": "text",
+   "box": {
+    "x": 0.8594,
+    "y": 0.9259,
+    "w": 0.1345,
+    "h": 0.0502
+   },
+   "note": "ADA Group · Katowice small sans",
+   "grid": "I9:J9"
+  }
+ ]
+}

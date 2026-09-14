@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-05T00:00:00Z",
+  "title": "Design System: Fresh Fingers",
+  "extensions": {
+    "colorMeta": {
+      "limewash": { "role": "neutral", "displayName": "Limewash", "canonical": "#f7f7e8", "tonalRamp": ["oklch(15% 0.012 105)", "oklch(27% 0.012 105)", "oklch(40% 0.012 105)", "oklch(52% 0.012 105)", "oklch(65% 0.012 105)", "oklch(78% 0.012 105)", "oklch(90% 0.012 105)", "oklch(97% 0.012 105)"] },
+      "ink": { "role": "primary", "displayName": "Ink", "canonical": "#0b0b0b", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(40% 0 0)", "oklch(52% 0 0)", "oklch(65% 0 0)", "oklch(78% 0 0)", "oklch(90% 0 0)", "oklch(95% 0 0)"] },
+      "poche": { "role": "neutral", "displayName": "Poche", "canonical": "#20201f", "tonalRamp": ["oklch(15% 0.003 80)", "oklch(27% 0.003 80)", "oklch(40% 0.003 80)", "oklch(52% 0.003 80)", "oklch(65% 0.003 80)", "oklch(78% 0.003 80)", "oklch(90% 0.003 80)", "oklch(95% 0.003 80)"] },
+      "marker-gold": { "role": "primary", "displayName": "Marker Gold", "canonical": "#dba70c", "tonalRamp": ["oklch(15% 0.05 85)", "oklch(27% 0.09 85)", "oklch(40% 0.12 85)", "oklch(52% 0.15 85)", "oklch(65% 0.17 85)", "oklch(78% 0.17 85)", "oklch(90% 0.12 85)", "oklch(95% 0.06 85)"] },
+      "daylight-gold": { "role": "secondary", "displayName": "Daylight Gold", "canonical": "#f2b21b", "tonalRamp": ["oklch(15% 0.05 80)", "oklch(27% 0.09 80)", "oklch(40% 0.12 80)", "oklch(52% 0.15 80)", "oklch(65% 0.17 80)", "oklch(80% 0.17 80)", "oklch(90% 0.12 80)", "oklch(95% 0.06 80)"] },
+      "fresh-fingers-blue": { "role": "tertiary", "displayName": "Fresh Fingers Blue", "canonical": "#083b93", "tonalRamp": ["oklch(15% 0.08 265)", "oklch(27% 0.14 265)", "oklch(40% 0.18 265)", "oklch(52% 0.18 265)", "oklch(65% 0.15 265)", "oklch(78% 0.10 265)", "oklch(90% 0.05 265)", "oklch(95% 0.02 265)"] },
+      "clean-go-red": { "role": "tertiary", "displayName": "Clean&Go Red", "canonical": "#e3262b", "tonalRamp": ["oklch(15% 0.06 27)", "oklch(27% 0.12 27)", "oklch(40% 0.18 27)", "oklch(52% 0.22 27)", "oklch(65% 0.20 27)", "oklch(78% 0.14 27)", "oklch(90% 0.07 27)", "oklch(95% 0.03 27)"] },
+      "finger-fresh-lime": { "role": "tertiary", "displayName": "Finger Fresh Lime", "canonical": "#c1d051", "tonalRamp": ["oklch(15% 0.04 115)", "oklch(27% 0.08 115)", "oklch(40% 0.12 115)", "oklch(52% 0.15 115)", "oklch(65% 0.16 115)", "oklch(82% 0.15 115)", "oklch(90% 0.10 115)", "oklch(95% 0.05 115)"] },
+      "freshmate-navy-text": { "role": "tertiary", "displayName": "FreshMate Navy (text)", "canonical": "#0f2f7a", "tonalRamp": ["oklch(15% 0.07 265)", "oklch(27% 0.12 265)", "oklch(35% 0.15 265)", "oklch(52% 0.16 265)", "oklch(65% 0.13 265)", "oklch(78% 0.09 265)", "oklch(90% 0.05 265)", "oklch(95% 0.02 265)"] },
+      "finger-fresh-olive-text": { "role": "tertiary", "displayName": "Finger Fresh Olive (text)", "canonical": "#6f7d12", "tonalRamp": ["oklch(15% 0.04 115)", "oklch(27% 0.07 115)", "oklch(40% 0.10 115)", "oklch(53% 0.13 115)", "oklch(65% 0.14 115)", "oklch(78% 0.14 115)", "oklch(90% 0.09 115)", "oklch(95% 0.04 115)"] },
+      "mascot-pink": { "role": "tertiary", "displayName": "Mascot Pink", "canonical": "#f2a7c0", "tonalRamp": ["oklch(15% 0.04 355)", "oklch(27% 0.08 355)", "oklch(40% 0.12 355)", "oklch(52% 0.14 355)", "oklch(65% 0.13 355)", "oklch(80% 0.09 355)", "oklch(90% 0.05 355)", "oklch(95% 0.02 355)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Sheet headings (h2); one italic serif word per heading." },
+      "display-small": { "displayName": "Display Small", "purpose": "Headings in the two-column partner / investor sheet." },
+      "display-italic": { "displayName": "Display Italic", "purpose": "The single lowercase Instrument Serif word inside a display heading." },
+      "mark": { "displayName": "Mark", "purpose": "Phudu wordmark only (hero header and title block)." },
+      "title": { "displayName": "Title", "purpose": "Brand names in the Marki sheet, coloured per brand." },
+      "title-small": { "displayName": "Title Small", "purpose": "Moment claims and usage steps." },
+      "closing": { "displayName": "Closing", "purpose": "Italic serif sign-off line at the end of a sheet; spec note row." },
+      "lead": { "displayName": "Lead", "purpose": "Paragraph under every sheet heading, max 46rem." },
+      "body": { "displayName": "Body", "purpose": "Default running text, links, button labels (500)." },
+      "body-table": { "displayName": "Body Table", "purpose": "Values in spec tables and brand meta lists." },
+      "label": { "displayName": "Label", "purpose": "Sheet labels, captions, dt keys, moment notes." },
+      "label-small": { "displayName": "Label Small", "purpose": "Form labels, brand meta keys, title-block keys." }
+    },
+    "shadows": [
+      { "name": "pill-lift", "value": "0 12px 26px rgba(11,11,11,.22)", "purpose": "Hover/focus lift on solid pill buttons only, paired with translateY(-2px). Hero pill uses 0 14u 30u with -3u." },
+      { "name": "focus-underline", "value": "0 2px 0 var(--gold)", "purpose": "Thickened gold bottom rule on focused inputs." }
+    ],
+    "motion": [
+      { "name": "ease-ui", "value": "cubic-bezier(.2,.8,.2,1)", "purpose": "CSS hover transitions: underline draw (.35s), pill lift (.3s), arrow slide (.3s), room scale (.8s)." },
+      { "name": "ease-arrive", "value": "expo.out", "purpose": "GSAP default for every entrance and hover tween." },
+      { "name": "ease-brush", "value": "power2.inOut", "purpose": "Headline lettering brushed left to right (1.4s); scroll-scrub band and marker travel (1 unit per room)." },
+      { "name": "ease-rule", "value": "power3.inOut", "purpose": "Rules drawing in from the left: rail line (.9s), sheet rules (1s)." },
+      { "name": "ease-marker", "value": "back.out(2.5)", "purpose": "Gold marker popping into place (.5s)." },
+      { "name": "duration-state", "value": "0.25s", "purpose": "Background/colour swaps on outline pill and rail names." },
+      { "name": "reveal", "value": "autoAlpha 0→1, y 28px, .9s, stagger .08, once at top 85%", "purpose": "Sheet content arriving once on scroll." },
+      { "name": "hero-scrub", "value": "pin hero, end +=140%, scrub .6, min-width 901px", "purpose": "Daylight band and gold marker walk the four rooms; leaving room dips to brightness(.94) for .35s." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "640px" },
+      { "name": "scrub-desktop", "value": "901px" },
+      { "name": "tablet", "value": "1100px" },
+      { "name": "stage-frame", "value": "2304px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid Pill Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Ink pill with limewash label; lifts 2px and gains the only shadow in the system on hover.",
+      "html": "<a class=\"ds-btn-solid\" href=\"#\">Pobierz deck</a>",
+      "css": ".ds-btn-solid{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:500;font-size:1.05rem;line-height:1;background:var(--ink,#0b0b0b);color:var(--ground,#f7f7e8);border-radius:999px;height:3.4rem;padding:0 1.9rem;text-decoration:none;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}.ds-btn-solid:hover,.ds-btn-solid:focus-visible{transform:translateY(-2px);box-shadow:0 12px 26px rgba(11,11,11,.22)}.ds-btn-solid:focus-visible{outline:3px solid var(--gold,#dba70c);outline-offset:4px}"
+    },
+    {
+      "name": "Outline Pill Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Nav pill: 2px ink border on paper that inverts to ink fill on hover.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Kontakt</a>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;justify-content:center;font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:500;font-size:14px;line-height:1;height:38px;padding:0 16px;border:2px solid var(--ink,#0b0b0b);border-radius:999px;color:var(--ink,#0b0b0b);background:transparent;text-decoration:none;transition:background .25s,color .25s}.ds-btn-outline:hover,.ds-btn-outline:focus-visible{background:var(--ink,#0b0b0b);color:var(--ground,#f7f7e8)}.ds-btn-outline:focus-visible{outline:3px solid var(--gold,#dba70c);outline-offset:4px}"
+    },
+    {
+      "name": "Text Link Button",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Ink label on a 2px ink rule with an inline stroke arrow that slides right on hover.",
+      "html": "<a class=\"ds-btn-text\" href=\"#\">Umów rozmowę <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 12h17M13 5l7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn-text{display:inline-flex;align-items:center;gap:.5em;font-family:'Schibsted Grotesk',system-ui,sans-serif;font-weight:500;font-size:1.05rem;line-height:1;color:var(--ink,#0b0b0b);padding:.4rem 0;border-bottom:2px solid var(--ink,#0b0b0b);text-decoration:none}.ds-arrow{width:.95em;height:.95em;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s cubic-bezier(.2,.8,.2,1)}.ds-btn-text:hover .ds-arrow,.ds-btn-text:focus-visible .ds-arrow{transform:translateX(.25em)}.ds-btn-text:focus-visible{outline:3px solid var(--gold,#dba70c);outline-offset:4px;border-radius:2px}"
+    },
+    {
+      "name": "Rule Input",
+      "kind": "input",
+      "refersTo": "input-rule",
+      "description": "Mono label over a borderless field with a 2px ink bottom rule; focus turns the rule gold.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-l\">E-mail</span><input class=\"ds-field-i\" type=\"email\" placeholder=\"\"></label>",
+      "css": ".ds-field{display:grid;gap:.45rem;font-family:'Schibsted Grotesk',system-ui,sans-serif}.ds-field-l{font-family:'Chivo Mono',ui-monospace,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--poche,#20201f)}.ds-field-i{font:inherit;font-size:1.05rem;color:var(--ink,#0b0b0b);background:transparent;border:0;border-bottom:2px solid var(--ink,#0b0b0b);padding:.6rem 0;border-radius:0;width:100%;caret-color:var(--gold,#dba70c)}.ds-field-i:focus{outline:none;border-bottom-color:var(--gold,#dba70c);box-shadow:0 2px 0 var(--gold,#dba70c)}"
+    },
+    {
+      "name": "Radio",
+      "kind": "input",
+      "refersTo": "input-rule",
+      "description": "Ink-bordered circle whose gold dot scales in when checked.",
+      "html": "<label class=\"ds-radio\"><input type=\"radio\" name=\"r\" checked><span>partnerem handlowym</span></label> <label class=\"ds-radio\"><input type=\"radio\" name=\"r\"><span>inwestorem</span></label>",
+      "css": ".ds-radio{display:flex;align-items:center;gap:.6rem;font-family:'Schibsted Grotesk',system-ui,sans-serif;font-size:1rem;padding:.3rem 0;cursor:pointer;color:var(--ink,#0b0b0b)}.ds-radio input{appearance:none;width:1.1rem;height:1.1rem;border:2px solid var(--ink,#0b0b0b);border-radius:50%;margin:0;display:grid;place-items:center;cursor:pointer}.ds-radio input::before{content:\"\";width:.5rem;height:.5rem;border-radius:50%;background:var(--gold,#dba70c);transform:scale(0);transition:transform .2s}.ds-radio input:checked::before{transform:scale(1)}.ds-radio input:focus-visible{outline:3px solid var(--gold,#dba70c);outline-offset:4px}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "button-outline",
+      "description": "Phudu wordmark with mono tagline; text links draw a 2px ink underline from the left; one outline pill.",
+      "html": "<div class=\"ds-head\"><a class=\"ds-wordmark\" href=\"#\"><span class=\"ds-wordmark-name\">Fresh Fingers</span><span class=\"ds-wordmark-tag\">Clean habits. Brighter days.</span></a><nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Partnerzy</a><a class=\"ds-nav-link\" href=\"#\">Inwestorzy</a><a class=\"ds-nav-pill\" href=\"#\">Kontakt</a></nav></div>",
+      "css": ".ds-head{display:flex;align-items:center;justify-content:space-between;gap:24px;color:var(--ink,#0b0b0b);font-family:'Schibsted Grotesk',system-ui,sans-serif}.ds-wordmark{text-decoration:none;color:inherit;line-height:1}.ds-wordmark-name{display:block;font-family:'Phudu','Barlow Condensed',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.01em;text-transform:uppercase;line-height:.9}.ds-wordmark-tag{display:block;margin-top:5px;font-family:'Chivo Mono',ui-monospace,monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--poche,#20201f)}.ds-nav{display:flex;align-items:center;gap:28px;font-size:14px;line-height:1}.ds-nav-link{position:relative;padding:.3em 0;color:inherit;text-decoration:none}.ds-nav-link::after{content:\"\";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink,#0b0b0b);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-nav-link:hover::after,.ds-nav-link:focus-visible::after{transform:scaleX(1)}.ds-nav-pill{display:inline-flex;align-items:center;height:38px;padding:0 16px;border:2px solid var(--ink,#0b0b0b);border-radius:999px;font-weight:500;color:inherit;text-decoration:none;transition:background .25s,color .25s}.ds-nav-pill:hover,.ds-nav-pill:focus-visible{background:var(--ink,#0b0b0b);color:var(--ground,#f7f7e8)}"
+    },
+    {
+      "name": "Brand Rail",
+      "kind": "nav",
+      "refersTo": "marker",
+      "description": "Four mono brand names over a 3px ink line with a gold marker under the active one.",
+      "html": "<nav class=\"ds-rail\"><ol class=\"ds-rail-names\"><li class=\"is-active\"><a href=\"#\">Fresh Fingers</a></li><li><a href=\"#\">Clean&amp;Go</a></li><li><a href=\"#\">FreshMate</a></li><li><a href=\"#\">Finger Fresh</a></li></ol><span class=\"ds-rail-line\"></span><span class=\"ds-rail-marker\"></span></nav>",
+      "css": ".ds-rail{position:relative;font-family:'Chivo Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;line-height:1}.ds-rail-names{list-style:none;margin:0;padding:0;display:flex;justify-content:space-between}.ds-rail-names a{display:inline-block;padding:.2em 0;color:var(--poche,#20201f);text-decoration:none;transition:color .25s}.ds-rail-names .is-active a{color:var(--ink,#0b0b0b);font-weight:500}.ds-rail-names a:hover{color:var(--ink,#0b0b0b)}.ds-rail-line{display:block;height:3px;margin-top:10px;background:var(--ink,#0b0b0b)}.ds-rail-marker{position:absolute;left:36px;bottom:-7px;width:14px;height:14px;border-radius:50%;background:var(--gold,#dba70c)}"
+    },
+    {
+      "name": "Sheet Rule",
+      "kind": "custom",
+      "refersTo": "label-mono",
+      "description": "3px ink closing rule with the sheet label in mono at its right end.",
+      "html": "<div class=\"ds-sheet-rule\"><span class=\"ds-sheet-label\">Arkusz 03 · Produkt</span></div>",
+      "css": ".ds-sheet-rule{position:relative;border-top:3px solid var(--ink,#0b0b0b);height:2.2rem}.ds-sheet-label{position:absolute;right:0;top:.55rem;font-family:'Chivo Mono',ui-monospace,monospace;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--poche,#20201f)}"
+    },
+    {
+      "name": "Spec Table",
+      "kind": "card",
+      "refersTo": "label-mono",
+      "description": "Definition list drawn as a table: 3px rule on top, 1px rules between rows, mono keys in a fixed column.",
+      "html": "<dl class=\"ds-spec\"><div class=\"ds-spec-row\"><dt>Format</dt><dd>chusteczka na palec, jednorazowa</dd></div><div class=\"ds-spec-row\"><dt>Smak</dt><dd>mięta</dd></div><div class=\"ds-spec-row ds-spec-row--note\"><dt>Uwaga</dt><dd>Nie zastępuje regularnego szczotkowania zębów.</dd></div></dl>",
+      "css": ".ds-spec{margin:0;border-top:3px solid var(--ink,#0b0b0b);font-family:'Schibsted Grotesk',system-ui,sans-serif;color:var(--ink,#0b0b0b)}.ds-spec-row{display:grid;grid-template-columns:9rem 1fr;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--ink,#0b0b0b);font-size:1.05rem;line-height:1.35}.ds-spec-row dt{font-family:'Chivo Mono',ui-monospace,monospace;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--poche,#20201f);padding-top:.2em}.ds-spec-row dd{margin:0}.ds-spec-row--note dd{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.1em}"
+    },
+    {
+      "name": "Sheet Heading",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Condensed uppercase display heading with exactly one italic serif word, followed by a lead.",
+      "html": "<div class=\"ds-sheet-head\"><h2 class=\"ds-h2\">Cztery marki. <em>Jedna</em> chusteczka.</h2><p class=\"ds-lead\">Ta sama chusteczka w czterech światach, dla różnych półek, kanałów i grup klientów.</p></div>",
+      "css": ".ds-sheet-head{max-width:62rem;color:var(--ink,#0b0b0b)}.ds-h2{font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;font-size:clamp(2.6rem,6.4vw,6rem);line-height:.92;letter-spacing:-.005em;text-transform:uppercase;margin:0 0 .35em;text-wrap:balance}.ds-h2 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;font-size:1.06em;line-height:.9}.ds-lead{font-family:'Schibsted Grotesk',system-ui,sans-serif;font-size:clamp(1.05rem,1.4vw,1.45rem);line-height:1.45;max-width:46rem;margin:0}"
+    },
+    {
+      "name": "Step Badge",
+      "kind": "chip",
+      "refersTo": "step-badge",
+      "description": "Ink circle with a mono number preceding a condensed uppercase step.",
+      "html": "<div class=\"ds-step\"><span class=\"ds-step-n\">1</span><span>Nałóż chusteczkę na palec.</span></div>",
+      "css": ".ds-step{display:flex;align-items:baseline;gap:1rem;font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(1.4rem,2.2vw,2.3rem);line-height:1;color:var(--ink,#0b0b0b)}.ds-step-n{font-family:'Chivo Mono',ui-monospace,monospace;font-size:.9rem;letter-spacing:.1em;color:var(--ground,#f7f7e8);background:var(--ink,#0b0b0b);border-radius:50%;width:2em;height:2em;display:inline-grid;place-items:center;flex:0 0 auto;transform:translateY(-.15em)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Architect's Section Sheet",
+    "overview": "The whole site is one drawing set. The hero is a building cut in section and drawn on limewash paper: four rooms side by side on a charcoal slab, each room an interior in one brand's character, the master claim brush-painted as a single white mural across all four walls. Everything below the hero is a numbered sheet (arkusz) of the same set: a bold condensed heading with one italic serif word, a lead paragraph, a drawn figure or table, and a 3px charcoal closing rule carrying the sheet label in monospace at its right end. The footer is the drawing's title block. Density is editorial and generous at desktop; content lives on one continuous paper with no cards, panels, or tinted bands.\n\nMaterial is flat paper and ink. Colour arrives almost entirely through the room plates and the mascot rasters; the UI itself is charcoal ink on limewash with one gold marker. The four brand colours appear in the plates and as the brand names in the Marki sheet, never as UI chrome. The hero is a width-locked stage measured in comp pixels (1/2304 of the viewport) so that the drawing keeps its proportions at every desktop width; sheets below use fluid clamp() rhythm. Motion follows the grammar of drafting: rooms rise from the slab, the lettering is brushed left to right, the rail line is drawn, the marker is set; on scroll the daylight band and the gold marker walk room to room.\n\nWhere the direction contract and the build diverge, the build wins: the OWN-WORLD limewash #F7F4EC landed as #f7f7e8, the charcoal split into ink #0b0b0b (lines, type) and poche #20201f (labels, hatch texture), the gold split into a marker gold #dba70c and a daylight gold #f2b21b used only in the soft-light band, and the lime cooled from #C8F542 to #c1d051. The contract's refusals held: no headline-left / pack-right hero, no dark grounds, no day/time axis, no metaphor replacing the product.",
+    "keyCharacteristics": [
+      "Limewash paper ground, charcoal ink, one gold marker; brand colour lives in the plates",
+      "Heavy condensed uppercase display with exactly one italic serif word per heading",
+      "Tabular monospace labels, uppercase and letterspaced, set in poche grey",
+      "Rules, not boxes: 3px charcoal rules open and close every group; 1px rules separate rows",
+      "Pill buttons in ink; underline-only text links; bottom-rule inputs",
+      "Rasters composite onto the paper with mix-blend-mode: darken so no white plate edges show",
+      "Width-locked hero stage in comp units; fluid sheets below; strip becomes a swipe carousel under 640px"
+    ],
+    "rules": [
+      { "name": "The One Marker Rule", "body": "Gold appears only as a marker of position or state (rail dot, niche dot, radio dot, caret, focus, selection). It never fills a surface, never colours a heading, never becomes a button.", "section": "colors" },
+      { "name": "The Plates Carry the Colour Rule", "body": "Brand colour enters through the room plates and the mascot rasters; in the UI a brand colour touches only that brand's name. Site chrome stays ink and poche on limewash.", "section": "colors" },
+      { "name": "The Ink-Safe Brand Name Rule", "body": "When a brand hue is set as text on limewash it is darkened until it reads as ink would: FreshMate navy becomes #0f2f7a and Finger Fresh lime becomes #6f7d12. Blue and red are dark enough to be used as they are.", "section": "colors" },
+      { "name": "The One Italic Word Rule", "body": "Every display heading carries exactly one word in Instrument Serif italic, lowercase, inline. Never two, never a whole line, never zero.", "section": "typography" },
+      { "name": "The Typed Annotation Rule", "body": "Anything that names, numbers, or keys something (sheet labels, dt keys, captions, form labels, footer keys) is set in Chivo Mono uppercase, letterspaced, in poche. Labels follow content or sit at a rule; they never sit above a heading as an eyebrow.", "section": "typography" },
+      { "name": "The Drawn Depth Rule", "body": "No resting element carries a shadow. Depth is conveyed by rules, hatch texture, and blend-composited rasters; the single soft shadow is a hover response on pill buttons and disappears at rest.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do measure anything inside the hero stage in --u with a px floor via max(), and re-base --u to 640 below the phone breakpoint.",
+      "Do open and close every content group with a 3px ink rule and divide its rows with 1px rules; the rule is the only section boundary.",
+      "Do give every display heading exactly one lowercase Instrument Serif italic word.",
+      "Do set every key, caption, sheet label, and form label in Chivo Mono uppercase, 0.14–0.16em, in poche.",
+      "Do composite rasters onto the paper with mix-blend-mode: darken so no plate edges show.",
+      "Do keep gold to markers of position and state (rail dot, niche dot, radio dot, caret, focus, selection).",
+      "Do self-host every face in latin and latin-ext subsets; Polish diacritics must render in the display face.",
+      "Do honour prefers-reduced-motion by collapsing all transitions and skipping the GSAP timeline."
+    ],
+    "donts": [
+      "Don't introduce cards, panels, tinted bands, or dark grounds; content sits on continuous limewash paper.",
+      "Don't use a brand colour as UI chrome; it belongs to that brand's room and name only, darkened to an ink-safe tone when set as text.",
+      "Don't put a shadow on a resting element; the only shadow is the pill lift on hover.",
+      "Don't add a day/time axis, a timeline, or a headline-left / pack-right hero.",
+      "Don't set Phudu on anything but the wordmark.",
+      "Don't place a mono label above a heading as an eyebrow; labels annotate, they do not introduce.",
+      "Don't round corners beyond the pill (buttons) and circle (markers, radios, badges)."
+    ]
+  }
+}
