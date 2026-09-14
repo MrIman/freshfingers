@@ -5,7 +5,7 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isStatic = root.classList.contains('is-static');
   const motion = !!G && !reduce && !isStatic;
-  if (motion) { root.classList.add('has-motion'); G.registerPlugin(ScrollTrigger, window.SplitText || {}); G.ticker.lagSmoothing(0); ScrollTrigger.clearScrollMemory('manual'); }
+  if (motion) { root.classList.add('has-motion'); G.registerPlugin(ScrollTrigger, window.SplitText || {}); G.ticker.lagSmoothing(0); ScrollTrigger.clearScrollMemory('manual'); ScrollTrigger.config({ ignoreMobileResize: true }); }
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; // the page always opens at the top, under the wipe
   if (reduce) root.classList.add('reduced-motion');
   const DPR = Math.min(2, devicePixelRatio || 1);
@@ -116,7 +116,7 @@
     stage.addEventListener('pointerleave', () => { last = null; G.to(sprite, { opacity: 0, duration: .25 }); });
     $('#skip').addEventListener('click', () => { done = true; finishStage(); arrived = true; });
     (document.fonts ? Promise.all([document.fonts.load("800 100px 'Bricolage Grotesque'"), document.fonts.load("italic 500 40px 'Newsreader'")]).catch(() => {}) : Promise.resolve()).then(() => paintComposite(layer)).then(c => { ctx = c; layer.style.background = 'transparent'; }); // once painted, the wipe shows the page beneath, not a colour
-    addEventListener('resize', () => { if (!last && !done) paintComposite(layer).then(c => { ctx = c; }); });
+    let stageW = innerWidth; addEventListener('resize', () => { if (innerWidth === stageW) return; stageW = innerWidth; if (!last && !done) paintComposite(layer).then(c => { ctx = c; }); });
   }
 
   /* ---------- 1b. arrival choreography: the claim letters and the packs land after the wipe ---------- */
@@ -137,11 +137,11 @@
     // hero shelf: packs part for the pointer (magnetic), the hexagon menu leans toward it
     const hex = $('#menu-btn');
     addEventListener('pointermove', e => {
-      const r = hex.getBoundingClientRect(), dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2), d = Math.hypot(dx, dy);
+      if (e.pointerType !== 'mouse') return; const r = hex.getBoundingClientRect(), dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2), d = Math.hypot(dx, dy);
       G.to(hex, { x: d < 160 ? dx * .22 : 0, y: d < 160 ? dy * .22 : 0, duration: .5, ease: 'power3.out' });
     }, { passive: true });
     $$('.pack').forEach(p => {
-      p.addEventListener('pointermove', e => { const r = p.getBoundingClientRect(); G.to($('.pack__img', p), { rotationY: ((e.clientX - r.left) / r.width - .5) * 26, rotationX: -((e.clientY - r.top) / r.height - .5) * 18, transformPerspective: 700, y: -14, duration: .5, ease: 'power2.out' }); });
+      p.addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; const r = p.getBoundingClientRect(); G.to($('.pack__img', p), { rotationY: ((e.clientX - r.left) / r.width - .5) * 26, rotationX: -((e.clientY - r.top) / r.height - .5) * 18, transformPerspective: 700, y: -14, duration: .5, ease: 'power2.out' }); });
       p.addEventListener('pointerleave', () => G.to($('.pack__img', p), { rotationY: 0, rotationX: 0, y: 0, duration: .9, ease: 'elastic.out(1,.5)' }));
     });
     // marquees run faster with the scroll and settle back
@@ -218,7 +218,7 @@
     if (!motion) { cv.remove(); return; }
     let painted = false, done = false;
     const paint = () => { if (done) return; paintStains(cv); painted = true; };
-    paint(); addEventListener('resize', () => { if (!done) paint(); });
+    paint(); let coverW = innerWidth; addEventListener('resize', () => { if (innerWidth === coverW) return; coverW = innerWidth; if (!done) paint(); });
     // the stains come off with the scroll: the wipe follows the chapter through the viewport, and the pointer can help
     let prog = 0, lastPt = null;
     const pts = () => wipePath(cv.clientWidth, cv.clientHeight, 6);
@@ -236,10 +236,12 @@
     b.addEventListener('pointerleave', () => { lp = null; });
   });
   // the page itself is the brand's field: whichever chapter sits under the viewport's middle paints the body (idempotent, no trigger races)
-  const paintBody = (bg, fg) => { document.body.style.setProperty('--bg', bg); document.body.style.setProperty('--fg', fg); root.classList.toggle('is-light', fg === '#ffffff'); };
+  let bodyKey = ''; const paintBody = (bg, fg) => { if (bodyKey === bg + fg) return; bodyKey = bg + fg; document.body.style.setProperty('--bg', bg); document.body.style.setProperty('--fg', fg); root.classList.toggle('is-light', fg === '#ffffff'); };
   if (motion) {
     const brands = $$('.brand'); let tick = false;
-    const sync = () => { tick = false; const mid = innerHeight * .55; const b = brands.find(el => { const r = el.getBoundingClientRect(); return r.top <= mid && r.bottom > mid; }); paintBody(b ? b.dataset.bg : '#ffffff', b ? b.dataset.ink : '#111111'); };
+    // phones: the top bar steps aside while the reader scrolls down, and comes back on the way up
+    const topBar = $('.top'); let lastY = scrollY;
+    const sync = () => { tick = false; if (topBar) { const y = scrollY, dy = y - lastY; lastY = y; if (innerWidth <= 1000 && !topBar.querySelector('.is-open')) { if (y > 140 && dy > 4) topBar.classList.add('is-hidden'); else if (dy < -4 || y <= 140) topBar.classList.remove('is-hidden'); } else topBar.classList.remove('is-hidden'); } const mid = innerHeight * .55; const b = brands.find(el => { const r = el.getBoundingClientRect(); return r.top <= mid && r.bottom > mid; }); paintBody(b ? b.dataset.bg : '#ffffff', b ? b.dataset.ink : '#111111'); };
     addEventListener('scroll', () => { if (!tick) { tick = true; requestAnimationFrame(sync); } }, { passive: true });
     addEventListener('resize', sync); sync();
   }
@@ -250,7 +252,7 @@
       const main = $('.brand__main', b), sec = $('.brand__second', b);
       G.fromTo(main, { y: 50 }, { y: -50, ease: 'none', scrollTrigger: { trigger: b, start: 'top bottom', end: 'bottom top', scrub: .8 } });
       if (sec) G.fromTo(sec, { y: 30, rotation: 12 }, { y: -30, rotation: 4, ease: 'none', scrollTrigger: { trigger: b, start: 'top bottom', end: 'bottom top', scrub: 1.2 } });
-      b.addEventListener('pointermove', e => { const rct = b.getBoundingClientRect(); const dx = (e.clientX - rct.left) / rct.width - .5, dy = (e.clientY - rct.top) / rct.height - .5; G.to(main, { rotationY: dx * 14, rotationX: -dy * 10, transformPerspective: 900, duration: .6, ease: 'power2.out' }); });
+      b.addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; const rct = b.getBoundingClientRect(); const dx = (e.clientX - rct.left) / rct.width - .5, dy = (e.clientY - rct.top) / rct.height - .5; G.to(main, { rotationY: dx * 14, rotationX: -dy * 10, transformPerspective: 900, duration: .6, ease: 'power2.out' }); });
       b.addEventListener('pointerleave', () => G.to(main, { rotationY: 0, rotationX: 0, duration: .8, ease: 'expo.out' }));
     });
   }

@@ -21,7 +21,9 @@ a{color:inherit;text-decoration:none}
 em{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none;letter-spacing:-.01em}
 
 /* ---------- top bar ---------- */
-.top{position:fixed;inset:0 0 auto 0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:22px var(--gutter);pointer-events:none}
+.top{position:fixed;inset:0 0 auto 0;z-index:40;transition:translate .38s var(--ease),opacity .3s}
+.top.is-hidden{translate:0 -130%;opacity:0}
+.top{display:flex;align-items:center;justify-content:space-between;padding:22px var(--gutter);pointer-events:none}
 .top>*{pointer-events:auto}
 .brandmark{display:inline-flex;align-items:center;gap:12px}
 .brandmark__cameo{width:44px;height:44px;border-radius:50%;border:1.5px solid currentColor;overflow:hidden;display:grid;place-items:center}
@@ -194,6 +196,8 @@ em{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:non
 
 /* ---------- responsive ---------- */
 @media (max-width:1000px){
+/* phones: no per-pixel drop-shadow filters on the packs (they repaint on every scroll frame) */
+.pack__img img{filter:none}.brand__main,.brand__second,.product__fig img{filter:drop-shadow(0 14px 18px rgba(0,0,0,.22))}
 .brand::before{background:linear-gradient(180deg,color-mix(in srgb,var(--field) 0%,transparent) 30%,color-mix(in srgb,var(--field) 70%,transparent) 52%,color-mix(in srgb,var(--field) 92%,transparent) 100%)}
   .brand{grid-template-columns:1fr;padding:100px var(--gutter) 60px}
   .brand__fig{width:min(420px,80%);order:-1}
